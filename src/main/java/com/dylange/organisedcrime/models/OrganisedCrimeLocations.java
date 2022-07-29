@@ -6,12 +6,12 @@ import java.util.Arrays;
 public class OrganisedCrimeLocations {
 
     public static final LocationGroup[] locationGroups = {
-        new Arceeus(),
-        new Hosidius(),
-        new Lovakengj(),
-        new Piscarilius(),
-        new Shayzien(),
-        new Other(),
+            new Arceuus(),
+            new Hosidius(),
+            new Lovakengj(),
+            new Piscarilius(),
+            new Shayzien(),
+            new Other(),
     };
 
     public static final OrganisedCrimeLocation[] allLocations;
@@ -28,57 +28,57 @@ public class OrganisedCrimeLocations {
         OrganisedCrimeLocation[] getLocations();
     }
 
-    public static class Arceeus implements LocationGroup {
+    public static class Arceuus implements LocationGroup {
         @Override
         public OrganisedCrimeLocation[] getLocations() {
             return new OrganisedCrimeLocation[]{
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, in a house south east of the bank.",
                             "The house exactly south-east of the bank, east of the walkway when walking into Arceuus. Ground floor.",
-                            "arceeus1.png",
+                            "arceuus1.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, in the temple crypt.",
                             "Inside of the temple on the ground floor marked by green on the map.",
-                            "arceeus2.png",
+                            "arceuus2.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, upstairs in a house south west of the temple.",
                             "Middle floor of house with teleport tablet lectern. ",
-                            "arceeus3.png",
+                            "arceuus3.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, upstairs in the pub.",
                             "The bar in the south-eastern portion of Arceuus, on the middle floor.",
-                            "arceeus4.png",
+                            "arceuus4.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, in a house south east of the temple.",
                             "A house south-east of the temple.",
-                            "arceeus5.png",
+                            "arceuus5.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, upstairs in the general store.",
                             "The general store is in the south-east part of Arceuus.",
-                            "arceeus6.png",
+                            "arceuus6.png",
                             true
                     ),
                     new OrganisedCrimeLocation(
-                            OrganisedCrimeLocation.Area.Arceeus,
+                            OrganisedCrimeLocation.Area.Arceuus,
                             "We've received reports of a gang meeting in Arceuus, upstairs in the bank.",
                             "The bank is in the south-west part of Arceuus.",
-                            "arceeus7.png",
+                            "arceuus7.png",
                             false
                     ),
             };
@@ -184,7 +184,7 @@ public class OrganisedCrimeLocations {
                     new OrganisedCrimeLocation(
                             OrganisedCrimeLocation.Area.Lovakengj,
                             "We've received reports of a gang meeting in Lovakengj, upstairs in the building north east of the Lovakengj Assembly.",
-                            "The T-shaped building with the furnace north-east of the Lovakengj Assembly.",
+                            "Upstairs in the T-shaped building with the furnace north-east of the Lovakengj Assembly.",
                             "lovakengj4.png",
                             true
                     ),
@@ -269,7 +269,7 @@ public class OrganisedCrimeLocations {
                     ),
                     new OrganisedCrimeLocation(
                             OrganisedCrimeLocation.Area.Shayzien,
-                            "We've received reports of a gang meeting in the Shayzia Ruin, north east of our city. ",
+                            "We've received reports of a gang meeting in the Shayzia Ruin, north east of our city.",
                             "In the Shayzia Ruin.",
                             "shayzien4.png",
                             true

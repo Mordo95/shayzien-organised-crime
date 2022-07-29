@@ -95,7 +95,7 @@ public class OrganisedCrimePlugin extends Plugin {
     protected void startUp() throws Exception {
         panel = new OrganisedCrimePanel(config, this::worldClicked);
 
-        final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "icon.png");
+        final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 
         navButton = NavigationButton.builder()
                 .tooltip("Organised Crime")
@@ -244,7 +244,7 @@ public class OrganisedCrimePlugin extends Plugin {
             return;
         }
 
-        final net.runelite.api.World rsWorld = client.createWorld();
+        final World rsWorld = client.createWorld();
         rsWorld.setActivity(world.getActivity());
         rsWorld.setAddress(world.getAddress());
         rsWorld.setId(world.getId());

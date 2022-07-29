@@ -17,12 +17,12 @@ public interface OrganisedCrimeConfig extends Config {
     }
 
     @ConfigItem(
-            keyName = "arceeus",
-            name = "Arceeus",
+            keyName = "Arceuus",
+            name = "Arceuus",
             position = 1,
-            description = "Track Arceeus locations."
+            description = "Track Arceuus locations."
     )
-    default boolean trackArceeus() {
+    default boolean trackArceuus() {
         return true;
     }
 

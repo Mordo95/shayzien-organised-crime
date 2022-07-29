@@ -54,7 +54,7 @@ public class LocationPanel extends JPanel {
         descriptionConstraints.gridy = 0;
         descriptionContainer.add(descriptionLabel, descriptionConstraints);
 
-        BufferedImage locationIcon = ImageUtil.getResourceStreamFromClass(getClass(), viewState.getImage());
+        BufferedImage locationIcon = ImageUtil.loadImageResource(getClass(), viewState.getImage());
         JLabel locationImage = new JLabel(new ImageIcon(new ImageIcon(locationIcon).getImage().getScaledInstance(214, 214, Image.SCALE_DEFAULT)));
         GridBagConstraints locationImageConstraints = new GridBagConstraints();
         locationImageConstraints.fill = GridBagConstraints.HORIZONTAL;

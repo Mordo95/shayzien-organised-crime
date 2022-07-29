@@ -54,6 +54,6 @@ public class OrganisedCrimeLocation {
     }
 
     public enum Area {
-        Arceeus, Hosidius, Lovakengj, Piscarilius, Shayzien, Other
+        Arceuus, Hosidius, Lovakengj, Piscarilius, Shayzien, Other
     }
 }

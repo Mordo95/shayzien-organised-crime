@@ -15,10 +15,10 @@ public class ViewStateMapper {
         HashMap<OrganisedCrimeLocation, List<GangInfo>> locationToInfoMap = new HashMap<>();
 
         // Go through the provided input of gang info per world checked, and add it to the above mapping if it is allowed
-        // per the provided configuration. i.e. If Arceeus is not ticked, Arceeus locations will not be added.
+        // per the provided configuration. i.e. If Arceuus is not ticked, Arceuus locations will not be added.
         gangInfoMap.forEach((world, gangInfo) -> {
             if (!gangInfo.getLocation().isMultiCombat() && config.multiCombatOnly()) return;
-            if (gangInfo.getLocation().getArea() == OrganisedCrimeLocation.Area.Arceeus && !config.trackArceeus()) return;
+            if (gangInfo.getLocation().getArea() == OrganisedCrimeLocation.Area.Arceuus && !config.trackArceuus()) return;
             if (gangInfo.getLocation().getArea() == OrganisedCrimeLocation.Area.Hosidius && !config.trackHosidius()) return;
             if (gangInfo.getLocation().getArea() == OrganisedCrimeLocation.Area.Lovakengj && !config.trackLovakengj()) return;
             if (gangInfo.getLocation().getArea() == OrganisedCrimeLocation.Area.Piscarilius && !config.trackPiscarilius()) return;
@@ -52,3 +52,4 @@ public class ViewStateMapper {
         return viewStates;
     }
 }
+
